@@ -1,0 +1,50 @@
+
+.containerContent {
+    text-align: center;
+    border: 2px solid black;
+  
+    &__heading {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    &__counter {
+      
+      display: inline-flex;
+      flex-direction: row; 
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+  
+      &__button {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid darkgray;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+  
+        &--left {
+          border-radius: 5px 0 0 5px;
+          margin-right: 50px;
+        }
+  
+        &--add {
+          border-radius: 0 5px 5px 0;
+          margin-left: 50px;
+        }
+  
+        &--text {
+          margin: 0;
+        }
+      }
+  
+      &__number {
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+  }
