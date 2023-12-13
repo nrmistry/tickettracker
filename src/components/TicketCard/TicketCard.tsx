@@ -2,21 +2,28 @@
 import "./TicketCard.scss";
 import Counter from "../Counter/Counter";
 
-/*type TicketCardProps = {
-    id: number;
+
+type Members = {
     name: string;
     role: string;
-} */
-
-const TicketCard = () => {
-
+  };
+  
+  type TicketCardProps = Members;
+  
+  const TicketCard = ({ name, role }: TicketCardProps) => {
     return (
-        <div className = "ticketContainer">
-            <h3 className="ticketContainer__name">name </h3>
-            <h3 className="ticketContainer__role">role </h3>
-            <Counter/>
+      <div className="ticketContainer">
+        <div className="ticketContainer__content">
+          <h3 className="ticketContainer__name">
+            Name: <span>{name}</span>
+          </h3>
+          <h3 className="ticketContainer__role">
+            Role: <span>{role}</span>
+          </h3>
+          <Counter />
         </div>
-    )
-}
-
-export default TicketCard;
+      </div>
+    );
+  };
+  
+  export default TicketCard;

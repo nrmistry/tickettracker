@@ -15,25 +15,28 @@ const [counter, setCounter] = useState<number>(0);
     }
 
     return (
-        <div className="counter">
+      <div className="containerContent">
+        <h1 className="containerContent__heading">Counter</h1>
+        <div className="containerContent__counter">
           <button
-            className="counter__button counter__button--left"
+            className="containerContent__counter__button containerContent__counter__button--left"
             aria-label="Navigate decrease"
             onClick={handleDecrement}
           >
-            <p className="counter__button--text">-</p>
+            <p className="containerContent__counter__button--text">-</p>
           </button>
-          <h3 className="counter__number"> {counter} </h3>
+          <h3 className="containerContent__counter__number">{counter}</h3>
           <button
-            className="counter__button counter__button--add"
+            className="containerContent__counter__button containerContent__counter__button--add"
             aria-label="Navigate increase"
             onClick={handleIncrement}
           >
-            <p className="counter__button--text">+</p>
+            <p className="containerContent__counter__button--text">+</p>
           </button>
         </div>
-      );
-    };
+      </div>
+    );
+  }
 
     
     export default Counter;
