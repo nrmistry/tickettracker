@@ -29,7 +29,7 @@ const App = ()=> {
     <div className ="app">
       <h1 className="appTitle">Ticket Tracker</h1>
       <SearchBox
-        label="Search"
+        label="Employees"
         searchTerm={searchTerm}
         handleInput={handleSearchInputChange}
         />
