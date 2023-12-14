@@ -15,10 +15,10 @@ type Members = {
       <div className="ticketContainer">
         <div className="ticketContainer__content">
           <h3 className="ticketContainer__name">
-            Name: <span>{name}</span>
+            {name}
           </h3>
           <h3 className="ticketContainer__role">
-            Role: <span>{role}</span>
+            {role}
           </h3>
           <Counter />
         </div>

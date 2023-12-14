@@ -1,6 +1,8 @@
+@use "../../styles/variables" as *;
+
 .containerContent {
     text-align: center;
-    border: 2px solid black;
+    border: 5px solid $colorFour;
   
     &__heading {
       font-size: 24px;
@@ -28,8 +30,7 @@
 
   
       &__button {
-        background-color: rgb(255, 255, 255);
-        border: 1px solid darkgray;
+        background-color: $colorOne;
         cursor: pointer;
         display: flex;
         align-items: center;

@@ -1,8 +1,6 @@
 import './App.scss';
-//import TicketCard from "./components/TicketCard/TicketCard"; 
 import teams from "./data/teams";
 import TicketBoard from "./containers/TicketBoard/TicketBoard";
-//import Members from "./types/Members";
 import {FormEvent, useState} from "react";
 import SearchBox from "./components/SearchBox/SearchBox";
 

@@ -1,24 +1,26 @@
+@use "../../styles/variables" as *;
+
 .search-box {
     display: flex;
     flex-direction: column;
-    padding: 0 3.125rem;
+    padding: 0 5px;
+    font-family: $font-family2;
   
     .search-box__label {
-      font-size: 1.25rem;
+        font-size: 20px; 
     }
   
     .search-box__input {
-      margin: 1.25rem 0;
-      padding: 0.625rem;
-      font-size: 1.125rem;
-      border: 0.313rem grey solid;
-      border-radius: 1rem;
-      color: black;
+        margin: 20px 0; 
+        padding: 10px; 
+        font-size: 18px; 
+        border: 5px grey solid; 
+        border-radius: 16px; 
+        color: $colorFour;
   
-      &:focus {
-        border: 0.313rem blue solid;
-        outline: none;
-      }
+        &:focus {
+            border: 5px $colorFour solid; 
+            outline: none;
+        }
     }
-  }
-  
+}
