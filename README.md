@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+# Ticket Tracker Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project used React TypeScript to create a web app that counts employees tickets. The basis of the project was to sucessfully use useState to incorparate a count function to keep track of an array of employees completed tickets. I have also added a search by name and role function to make it easier to search for whichever employee required. I have incorparate styling to make it accessible on phone screen and web page.
 
-Currently, two official plugins are available:
+# Project Functionality 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Deployed site
+- Succesfully mapped over each employee
+- Can increment tickets
+- Can decrement tickets
+- Can't decrement a task into minus figures
+- Each employee has their own state
+- Search bar function to search by name and role
 
-## Expanding the ESLint configuration
+# How to run
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- clone the project down
+- run npm install
+- run npm run dev
