@@ -1,0 +1,70 @@
+@use "../../styles/variables" as *;
+
+.containerContent {
+    text-align: center;
+    border: 5px solid $colorFour;
+  
+    &__heading {
+      font-size: 24px;
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+    }
+    }
+  
+    &__counter {
+      
+      display: inline-flex;
+      flex-direction: row; 
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+  
+      &__button {
+        background-color: $colorOne;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+  
+        &--left {
+          border-radius: 5px 0 0 5px;
+          margin-right: 50px;
+
+          @media screen and (max-width: 767px) {
+            margin-right: 0;
+        }
+        }
+  
+        &--add {
+          border-radius: 0 5px 5px 0;
+          margin-left: 50px;
+
+          @media screen and (max-width: 767px) {
+            margin-left: 0;
+        }
+        }
+  
+        &--text {
+          margin: 0;
+        }
+      }
+  
+      &__number {
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+  }
